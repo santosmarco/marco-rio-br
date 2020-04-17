@@ -49,7 +49,7 @@ function handleCVDownload() {
 }
 
 function handleContactFormSubmission($form) {
-  let $formId = $form.attr("id");
+  let formId = $form.attr("id");
   let sender = $(`#${formId}Name`)
     .val()
     .trim();
@@ -79,19 +79,19 @@ function handleContactFormSubmission($form) {
   $.ajax({
     url: `/contact?${formData}`,
     type: "POST",
-    success: res => {
-      $formStatus.html(
-        `<i class="fas fa-check-circle mr-1"></i> <span class="font-weight-bold mr-2">Success!</span> Thank you, ${sender}! Your e-mail was sent successfully. Marco will answer it shortly.`
-      );
-      $formControls.val("");
-      $(`#${formId}Subject`).val("Work-related");
-    },
-    error: res => {
-      $formStatus.html(
-        `<i class="fas fa-times-circle mr-1"></i> <span class="font-weight-bold mr-2">Error.</span> Sorry, ${sender}... There was an error while trying to send your e-mail to Marco from this form. Please send it manually to me@marco.rio.br.`
-      );
-    },
-    complete: () => {
+    complete: res => {
+      let status = res.responseJSON.status;
+      if (status == "success") {
+        $formStatus.html(
+          `<i class="fas fa-check-circle mr-1"></i> <span class="font-weight-bold mr-2">Success!</span> Thank you, ${sender}! Your e-mail was sent successfully. Marco will answer it shortly.`
+        );
+        $formControls.val("");
+        $(`#${formId}Subject`).val("Work-related");
+      } else {
+        $formStatus.html(
+          `<i class="fas fa-times-circle mr-1"></i> <span class="font-weight-bold mr-2">Error.</span> Sorry, ${sender}... There was an error while trying to send your e-mail to Marco from this form. Please send it manually to me@marco.rio.br.`
+        );
+      }
       $form.addClass("mb-3");
       $formStatus.css("opacity", 1).removeClass("d-none");
 
