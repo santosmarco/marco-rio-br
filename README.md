@@ -1,2 +1,2 @@
-# personal-website
-My personal website, at www.marco.rio.br
+# www.marco.rio.br
+This is the official repository of my personal website, www.marco.rio.br
