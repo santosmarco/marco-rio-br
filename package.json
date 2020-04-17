@@ -12,7 +12,11 @@
     "type": "git",
     "url": "https://github.com/santosmarco/personal-website.git"
   },
-  "main": "marco-home/server.js",
+  "bugs": {
+    "url": "https://github.com/santosmarco/personal-website/issues"
+  },
+  "contributors": [],
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
