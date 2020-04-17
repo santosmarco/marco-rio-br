@@ -15,7 +15,7 @@ function renderProjects() {
           <a href="${p.url.main}" target="_blank">
             <img
               class="card-img-top"
-              src="/project${idx}-thumbnail.png"
+              src="/project${projects.length - 1 - idx}-thumbnail.png"
               alt="${p.title}"
             />
           </a>
