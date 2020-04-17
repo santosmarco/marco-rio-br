@@ -12,11 +12,11 @@ var MailTransporter = nodemailer.createTransport({
 });
 
 module.exports = app => {
-  MailTransporter.verify(err => {
-    if (err) {
-      throw err;
-    } else {
-      app.route("/contact").post((req, res) => {
+  app.route("/contact").post((req, res) => {
+    MailTransporter.verify(err => {
+      if (err) {
+        res.json({ status: "error" });
+      } else {
         let query = req.query;
         query.message = query.message.split("\r\n").join("<br>");
         if (!query.lang) {
@@ -32,24 +32,25 @@ module.exports = app => {
             email.subject = `${
               query.subject === "Work-related" ? "[WORK] " : ""
             }New message from marco.rio.br`;
-            email.html = `<p>Hello, Marco,</p>
-            <p>You've got a new message on <i>marco.rio.br</i>.</p>
-            <b>Date:</b> ${now.format("dddd, MMMM Do YYYY, h:mm:ss a")}<br>
-            <b>From:</b> ${query.name}<br>
-            <b>Work-related?</b> ${
-              query.subject === "Work-related" ? "Yes" : "No"
-            }<br>
-            <b>Message:</b><br>
-            <p style="text-indent: 0; margin: 1em;">${query.message}</p><br>
-            <a href="mailto:${query.email}">Reply</a>`;
+            email.html = `
+                <p>Hello, Marco,</p>
+                <p>You've got a new message on <i>marco.rio.br</i>.</p>
+                <b>Date:</b> ${now.format("dddd, MMMM Do YYYY, h:mm:ss a")}<br>
+                <b>From:</b> ${query.name}<br>
+                <b>Work-related?</b> ${
+                  query.subject === "Work-related" ? "Yes" : "No"
+                }<br>
+                <b>Message:</b><br>
+                <p style="text-indent: 0; margin: 1em;">${query.message}</p><br>
+                <a href="mailto:${query.email}">Reply</a>
+            `;
             break;
         }
+
         MailTransporter.sendMail(email).then(() => {
           res.json({ status: "success" });
         });
-      });
-
-      console.log("> marco.rio.br is ready to handle e-mails");
-    }
+      }
+    });
   });
 };
