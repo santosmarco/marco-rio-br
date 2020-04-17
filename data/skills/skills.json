@@ -44,5 +44,56 @@
       ]
     ]
   ],
-  "Data science": [["Data visualization", [["D3", 0.6]]]]
+  "Data science": [["Data visualization", [["D3", 0.6]]]],
+  "Design": [
+    [
+      "Softwares",
+      [
+        ["Illustrator", 0.8],
+        ["iMovie", 0.7],
+        ["Photoshop", 0.5]
+      ]
+    ],
+    [
+      "Web design principles",
+      [
+        ["Responsiveness", 1.0],
+        ["Accessibility", 0.7]
+      ]
+    ]
+  ],
+  "Project management": [
+    [
+      "Softwares",
+      [
+        ["Illustrator", 0.8],
+        ["iMovie", 0.7],
+        ["Photoshop", 0.5]
+      ]
+    ],
+    [
+      "Web design principles",
+      [
+        ["Responsiveness", 1.0],
+        ["Accessibility", 0.7]
+      ]
+    ]
+  ],
+  "Soft": [
+    [
+      "Softwares",
+      [
+        ["Illustrator", 0.8],
+        ["iMovie", 0.7],
+        ["Photoshop", 0.5]
+      ]
+    ],
+    [
+      "Web design principles",
+      [
+        ["Responsiveness", 1.0],
+        ["Accessibility", 0.7]
+      ]
+    ]
+  ]
 }
