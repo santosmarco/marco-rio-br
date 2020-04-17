@@ -1,0 +1,48 @@
+{
+  "Programming": [
+    [
+      "Languages",
+      [
+        ["HTML", 1],
+        ["CSS", 1],
+        ["JavaScript", 1],
+        ["Python", 0.5]
+      ]
+    ],
+    [
+      "Front end",
+      [
+        ["Bootstrap", 0.8],
+        ["jQuery", 0.8],
+        ["React", 0.7],
+        ["Sass", 0.6],
+        ["Redux", 0.5]
+      ]
+    ],
+    [
+      "Back end",
+      [
+        ["APIs", 1],
+        ["Microservices", 0.9],
+        ["NodeJS", 0.7],
+        ["Express", 0.7]
+      ]
+    ],
+    [
+      "Databases",
+      [
+        ["MongoDB", 0.8],
+        ["Mongoose", 0.8]
+      ]
+    ],
+    [
+      "Security & Quality Assurance",
+      [
+        ["HelmetJS", 0.9],
+        ["Chai", 0.5],
+        ["Passport", 0.5]
+      ]
+    ]
+  ],
+  "Data science": [["Data visualization", [["D3", 0.6]]]]
+}

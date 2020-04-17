@@ -1,0 +1,126 @@
+.btn-primary {
+  background-color: #a52422;
+  border-color: #a52422;
+}
+.btn-primary:hover {
+  background-color: #881e1c;
+  border-color: #881e1c;
+}
+.btn-primary.focus,
+.btn-primary:focus {
+  background-color: #881e1c;
+  border-color: #881e1c;
+}
+.btn-secondary {
+  background-color: #171717;
+  border-color: #171717;
+}
+.btn-secondary:hover {
+  background-color: #000000;
+  border-color: #000000;
+}
+.btn-primary.focus,
+.btn-primary:focus {
+  background-color: #000000;
+  border-color: #000000;
+}
+.btn-link {
+  color: white;
+  text-decoration: underline;
+}
+.btn-link:hover {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  text-decoration: none;
+}
+a[data-toggle="collapse"] {
+  color: inherit;
+}
+a[data-toggle="collapse"]:hover {
+  color: #e8ebe4;
+  text-decoration: none;
+}
+.download-cv-btn-link {
+  color: inherit;
+}
+.download-cv-btn-link:hover {
+  color: black;
+}
+
+.dropdown-item.active {
+  background-color: #a52422;
+}
+.dropdown-item:focus {
+  background-color: #a52422;
+}
+
+.header-hr {
+  width: 80px;
+  height: 2px;
+  background-color: white;
+}
+
+.bg-0 {
+  background-color: #000000;
+}
+.bg-1 {
+  background-color: #a52422;
+}
+.bg-2 {
+  background-color: #2f4550;
+}
+.bg-3 {
+  background-color: #586f7c;
+}
+.bg-4 {
+  background-color: #b8dbd9;
+  color: black;
+}
+.bg-5 {
+  background-color: #e8ebe4;
+  color: black;
+}
+.bg-6 {
+  background-color: white;
+  color: black;
+}
+
+.txt-5 {
+  color: #a52422;
+}
+
+#meetMarcoPic {
+  max-width: 35%;
+  min-width: 200px;
+}
+
+#projectsShowcaseContent {
+  box-shadow: inset 0 0 60px 5px #000;
+}
+.projects-showcase-project {
+  width: 16rem;
+  white-space: initial !important;
+}
+
+.tooltip-inner {
+  text-align: left;
+}
+
+footer {
+  box-shadow: inset 0px 15px 8px -10px #ccc;
+}
+
+/* Medium devices */
+@media (min-width: 768px) {
+  #meetMarcoPic {
+    max-width: 100%;
+  }
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+  #meetMarcoContent {
+    align-items: center !important;
+  }
+}

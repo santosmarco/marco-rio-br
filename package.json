@@ -1,0 +1,37 @@
+{
+  "name": "marco.rio.br",
+  "description": "marco.rio.br is the official website for Marco Santos.",
+  "homepage": "http://www.marco.rio.br/",
+  "author": {
+    "name": "Marco Aurelio Chagas dos Santos",
+    "email": "me@marco.rio.br",
+    "url": "http://www.marco.rio.br/"
+  },
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/santosmarco/personal-website.git"
+  },
+  "main": "marco-home/server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.3",
+    "moment-timezone": "^0.5.28",
+    "nodemailer": "^6.4.6"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "license": "MIT",
+  "keywords": [
+    "marco",
+    "santos",
+    "developer"
+  ]
+}

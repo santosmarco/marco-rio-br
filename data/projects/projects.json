@@ -1,0 +1,112 @@
+[
+  {
+    "title": "Tribute to Steve Jobs",
+    "subtitle": "fCC • project #1",
+    "description": "This was my very first web development project. I made a tribute page to Steve Jobs. Until project #6 of freeCodeCamp I was supposed to use only HTML and CSS.",
+    "url": {
+      "main": "https://codepen.io/santosmarco/full/yLBvEEM",
+      "thumbnail": "/project0.png",
+      "source": "https://codepen.io/santosmarco/pen/yLBvEEM",
+      "user_stories": "https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page"
+    }
+  },
+  {
+    "title": "RunForPresident.com",
+    "subtitle": "fCC • project #2",
+    "description": "An HTML form that simulates an application to run for president of the USA.",
+    "url": {
+      "main": "https://codepen.io/santosmarco/full/GRKQBqp",
+      "thumbnail": "/project1.png",
+      "source": "https://codepen.io/santosmarco/pen/GRKQBqp",
+      "user_stories": "https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form"
+    }
+  },
+  {
+    "title": "Wine Club",
+    "subtitle": "fCC • project #3",
+    "description": "This was my very first web development project. I made a tribute page to Steve Jobs. Until project #6 of freeCodeCamp I was supposed to use only HTML and CSS.",
+    "url": {
+      "main": "https://codepen.io/santosmarco/full/ExYLdwg",
+      "thumbnail": "/project2.png",
+      "source": "https://codepen.io/santosmarco/pen/ExYLdwg",
+      "user_stories": "https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page"
+    }
+  },
+  {
+    "title": "coinlib.py • Docs",
+    "subtitle": "fCC • project #4",
+    "description": "This was my very first web development project. I made a tribute page to Steve Jobs. Until project #6 of freeCodeCamp I was supposed to use only HTML and CSS.",
+    "url": {
+      "main": "https://codepen.io/santosmarco/full/MWgqLOz",
+      "thumbnail": "/project3.png",
+      "source": "https://codepen.io/santosmarco/pen/MWgqLOz",
+      "user_stories": "https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page"
+    }
+  },
+  {
+    "title": "Personal Portfolio (V.1)",
+    "subtitle": "fCC • project #5",
+    "description": "This was my very first web development project. I made a tribute page to Steve Jobs. Until project #6 of freeCodeCamp I was supposed to use only HTML and CSS.",
+    "url": {
+      "main": "https://codepen.io/santosmarco/full/rNBRxda",
+      "thumbnail": "/project4.png",
+      "source": "https://codepen.io/santosmarco/pen/rNBRxda",
+      "user_stories": "https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage"
+    }
+  },
+  {
+    "title": "Quote Machine",
+    "subtitle": "fCC • project #6",
+    "description": "This was my very first web development project. I made a tribute page to Steve Jobs. Until project #6 of freeCodeCamp I was supposed to use only HTML and CSS.",
+    "url": {
+      "main": "https://codepen.io/santosmarco/full/GRRYKWd",
+      "thumbnail": "/project5.png",
+      "source": "https://codepen.io/santosmarco/pen/GRRYKWd",
+      "user_stories": "https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine"
+    }
+  },
+  {
+    "title": "Markdown Previewer",
+    "subtitle": "fCC • project #7",
+    "description": "This was my very first web development project. I made a tribute page to Steve Jobs. Until project #6 of freeCodeCamp I was supposed to use only HTML and CSS.",
+    "url": {
+      "main": "https://codepen.io/santosmarco/full/KKKYbdL",
+      "thumbnail": "/project6.png",
+      "source": "https://codepen.io/santosmarco/pen/KKKYbdL",
+      "user_stories": "https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-markdown-previewer"
+    }
+  },
+  {
+    "title": "Drum Machine",
+    "subtitle": "fCC • project #8",
+    "description": "This was my very first web development project. I made a tribute page to Steve Jobs. Until project #6 of freeCodeCamp I was supposed to use only HTML and CSS.",
+    "url": {
+      "main": "https://codepen.io/santosmarco/full/dyyBPXO",
+      "thumbnail": "/project7.png",
+      "source": "https://codepen.io/santosmarco/pen/dyyBPXO",
+      "user_stories": "https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-drum-machine"
+    }
+  },
+  {
+    "title": "JavaScript Calculator",
+    "subtitle": "fCC • project #9",
+    "description": "This was my very first web development project. I made a tribute page to Steve Jobs. Until project #6 of freeCodeCamp I was supposed to use only HTML and CSS.",
+    "url": {
+      "main": "https://codepen.io/santosmarco/full/vYYqyRb",
+      "thumbnail": "/project8.png",
+      "source": "https://codepen.io/santosmarco/pen/vYYqyRb",
+      "user_stories": "https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-javascript-calculator"
+    }
+  },
+  {
+    "title": "Pomodoro Clock",
+    "subtitle": "fCC • project #10",
+    "description": "This was my very first web development project. I made a tribute page to Steve Jobs. Until project #6 of freeCodeCamp I was supposed to use only HTML and CSS.",
+    "url": {
+      "main": "https://codepen.io/santosmarco/full/XWJmWZm",
+      "thumbnail": "/project9.png",
+      "source": "https://codepen.io/santosmarco/pen/XWJmWZm",
+      "user_stories": "https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-pomodoro-clock"
+    }
+  }
+]
