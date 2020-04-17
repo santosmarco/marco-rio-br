@@ -7,7 +7,8 @@ var routes = [
   ["/", require("./routes/root")],
   ["/contact", require("./routes/contact")],
   ["/api/projects", require("./routes/api/projects")],
-  ["/api/skills", require("./routes/api/skills")]
+  ["/api/skills", require("./routes/api/skills")],
+  ["404", require("./routes/404")]
 ];
 
 var app = express();

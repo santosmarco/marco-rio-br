@@ -107,7 +107,11 @@ a[data-toggle="collapse"]:hover {
   text-align: left;
 }
 
-footer {
+.no-underline {
+  text-decoration: none !important;
+}
+
+.footer-shadow {
   box-shadow: inset 0px 15px 8px -10px #ccc;
 }
 
