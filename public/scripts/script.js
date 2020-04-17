@@ -5,9 +5,9 @@ function getNavbarHeight() {
   return $("#navbar").outerHeight();
 }
 
-function scrollTo($target) {
+function scrollTo($target, navbarHeight) {
   $("html, body").animate(
-    { scrollTop: $target.offset().top - getNavbarHeight() },
+    { scrollTop: $target.offset().top - navbarHeight },
     1000
   );
 }
@@ -15,16 +15,16 @@ function scrollTo($target) {
 function updateHeadTitle($currentSection) {
   let newHeadTitle = "Marco Santos";
   switch ($currentSection.attr("id")) {
-    case "#skills":
+    case "skills":
       newHeadTitle = "Marco Santos • Skills";
       break;
-    case "#life":
+    case "lifeCareer":
       newHeadTitle = "Marco Santos • Life & Career";
       break;
-    case "#projects":
+    case "projectsShowcase":
       newHeadTitle = "Marco Santos • Projects";
       break;
-    case "#contact":
+    case "contact":
       newHeadTitle = "Marco Santos • Contact";
       break;
   }
@@ -125,11 +125,14 @@ function renderSkillsCategory($skillsMenuItem) {
 }
 
 $(document).ready(() => {
+  // Config
+  var navbarHeight = getNavbarHeight();
+
   /*
   Add padding-top to section#meetMarco
   in order to compensate nav height
   */
-  $("#meetMarco").css("padding-top", getNavbarHeight());
+  $("#meetMarco").css("padding-top", navbarHeight);
 
   /*
   Bind actions of scrolling to target section
@@ -140,17 +143,17 @@ $(document).ready(() => {
     function() {
       event.preventDefault();
       $("#navbarSupportedContent").collapse("hide");
-      let targetSection = $($(this).href);
-      scrollTo(targetSection);
+      let targetSection = $($(this).attr("href"));
+      scrollTo(targetSection, navbarHeight);
       updateHeadTitle(targetSection);
     }
   );
 
   /*
-  Bind chevron animations to #lifeCareer.collapse elements
+  Bind chevron animations to "#lifeCareer .collapse" elements
   and to the dropdown under #skills (xs and sm screens only)
   */
-  $("#lifeCareer.collapse")
+  $("#lifeCareer .collapse")
     .on("show.bs.collapse", function() {
       animateChevron($(this), "in");
     })
