@@ -122,6 +122,16 @@ function renderSkillsCategory($skillsMenuItem) {
     .replace("-", " ");
   renderSkills(category);
   $("#skillsMenuCurrent").text(category);
+  if (category != "Soft") {
+    $("#skillsCertificationsTitle").text(category);
+    $("#skillsCertificationsLink").attr(
+      "href",
+      `/c/${category.toLowerCase().replace(" ", "-")}`
+    );
+  } else {
+    $("#skillsCertificationsTitle").text("Soft skills");
+    $("#skillsCertificationsLink").attr("href", `/c/soft-skills`);
+  }
 }
 
 $(document).ready(() => {
