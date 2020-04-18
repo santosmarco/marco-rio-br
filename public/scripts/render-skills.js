@@ -49,8 +49,8 @@ function renderSkills(category) {
   if (!skills) {
     $.ajax({
       url: `/api/skills`,
-      type: "GET"
-    }).then(res => {
+      type: "GET",
+    }).then((res) => {
       skills = res;
       handleRendering(category);
     });

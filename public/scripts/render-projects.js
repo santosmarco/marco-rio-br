@@ -45,15 +45,15 @@ function renderProjects() {
     fixHeights();
 
     $(".project-tooltip")
-      .click(function() {
+      .click(function () {
         event.preventDefault();
         $(this).tooltip("show");
       })
       .hover(
-        function() {
+        function () {
           $(this).tooltip("show");
         },
-        function() {
+        function () {
           $(this).tooltip("hide");
         }
       );
@@ -62,8 +62,8 @@ function renderProjects() {
   if (!projects) {
     $.ajax({
       url: `/api/projects`,
-      type: "GET"
-    }).then(res => {
+      type: "GET",
+    }).then((res) => {
       projects = res.reverse();
       handleRendering();
     });
@@ -80,7 +80,7 @@ function fixHeights() {
   let maxHeight = lineHeight * maxLines;
   let minWords = maxLines * 3;
 
-  $(".psp-description").each(function() {
+  $(".psp-description").each(function () {
     let $el = $(this);
     let $elHeight = $el.height();
     if ($elHeight > maxHeight) {

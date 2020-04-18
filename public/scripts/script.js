@@ -37,9 +37,9 @@ function animateChevron($parent, mode) {
     { deg: mode === "in" ? 180 : 360 },
     {
       duration: 400,
-      step: now => {
+      step: (now) => {
         $chevron.css({ transform: "rotate(" + now + "deg)" });
-      }
+      },
     }
   );
 }
@@ -50,9 +50,7 @@ function handleCVDownload() {
 
 function handleContactFormSubmission($form) {
   let formId = $form.attr("id");
-  let sender = $(`#${formId}Name`)
-    .val()
-    .trim();
+  let sender = $(`#${formId}Name`).val().trim();
   let formData = $form.serialize();
 
   let $formControls = $(".form-control");
@@ -71,7 +69,7 @@ function handleContactFormSubmission($form) {
         complete: () => {
           $formStatus.addClass("d-none");
           $form.addClass("mb-3");
-        }
+        },
       }
     );
   }
@@ -79,7 +77,7 @@ function handleContactFormSubmission($form) {
   $.ajax({
     url: `/contact?${formData}`,
     type: "POST",
-    complete: res => {
+    complete: (res) => {
       let status = res.responseJSON.status;
       if (status == "success") {
         $formStatus.html(
@@ -98,7 +96,7 @@ function handleContactFormSubmission($form) {
       $formControls.attr("disabled", false);
       $submitBtn.attr("disabled", false).html(`Send message <i
             class="fas fa-paper-plane ml-1"></i>`);
-    }
+    },
   });
 }
 
@@ -150,7 +148,7 @@ $(document).ready(() => {
   on the navbar internal links, logo and the CTA button on #meetMarco
   */
   $(".nav-link-inside, .navbar-brand, #meetMarcoCallToAction").click(
-    function() {
+    function () {
       event.preventDefault();
       $("#navbarSupportedContent").collapse("hide");
       let targetSection = $($(this).attr("href"));
@@ -164,28 +162,28 @@ $(document).ready(() => {
   and to the dropdown under #skills (xs and sm screens only)
   */
   $("#lifeCareer .collapse")
-    .on("show.bs.collapse", function() {
+    .on("show.bs.collapse", function () {
       animateChevron($(this), "in");
     })
-    .on("hide.bs.collapse", function() {
+    .on("hide.bs.collapse", function () {
       animateChevron($(this), "out");
     });
   $("#skillsMenuDropdown")
-    .on("show.bs.dropdown", function() {
+    .on("show.bs.dropdown", function () {
       animateChevron($(this), "in");
     })
-    .on("hide.bs.dropdown", function() {
+    .on("hide.bs.dropdown", function () {
       animateChevron($(this), "out");
     });
 
   // Bind the handler for downloading my curriculum to #downloadCVBtn
-  $("#downloadCVBtn").click(function() {
+  $("#downloadCVBtn").click(function () {
     event.preventDefault();
     handleCVDownload();
   });
 
   // Bind the handler for submitting the #contactForm to it
-  $("#contactForm").submit(function() {
+  $("#contactForm").submit(function () {
     event.preventDefault();
     handleContactFormSubmission($(this));
   });
@@ -195,7 +193,7 @@ $(document).ready(() => {
   update all other menu items according to the one clicked and
   to render the skills under the category this menu item represents
   */
-  $(".skills-menu-item, .skills-menu-item-sm").click(function() {
+  $(".skills-menu-item, .skills-menu-item-sm").click(function () {
     event.preventDefault();
     let currItem = $(this);
     updateSkillsMenuItems(currItem);

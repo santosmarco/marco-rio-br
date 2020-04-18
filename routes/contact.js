@@ -7,13 +7,13 @@ var MailTransporter = nodemailer.createTransport({
   secure: true,
   auth: {
     user: "eu@marco.rio.br",
-    pass: process.env.MAIL_PASSWORD
-  }
+    pass: process.env.MAIL_PASSWORD,
+  },
 });
 
-module.exports = app => {
+module.exports = (app) => {
   app.route("/contact").post((req, res) => {
-    MailTransporter.verify(err => {
+    MailTransporter.verify((err) => {
       if (err) {
         res.json({ status: "error" });
       } else {
@@ -25,7 +25,7 @@ module.exports = app => {
         let now = moment().tz("America/Sao_Paulo");
         let email = {
           from: "Marco.rio.br <eu@marco.rio.br>",
-          to: "eu@marco.rio.br"
+          to: "eu@marco.rio.br",
         };
         switch (query.lang) {
           case "en":
